@@ -14,7 +14,8 @@ String script = 'List<Account> acList = [Select Id, Name From Account Where Id I
 				+'\n   acc.BillingCity = \'Gnite City\';'
 				+'\n}'
 				+'\n update acList;';
-ExecuteAnonymousBatch batch = new ExecuteAnonymousBatch('Select Id From Account Where BillingCity != \'Gnite City\'', script, true);
+String query = 'Select Id From Account Where BillingCity != \'Gnite City\'';
+ExecuteAnonymousBatch batch = new ExecuteAnonymousBatch(query, script, true);
 Database.executeBatch(batch, 100);
 ```
 
