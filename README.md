@@ -6,6 +6,8 @@ Read details @ http://blog.enree.co/2017/08/salesforce-apex-execute-anonymous-ba
 
 The `ID_LIST` *global* variable is of type `List<ID>` and contains all the IDs provided by the Batch's scope.
 
+Remember to configure a named credential called `EXECUTE_ANONYMOUS` that points to your instance (and that is logged with a valid session ID).
+
 Example of usage:
 
 ```java
