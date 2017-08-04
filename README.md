@@ -2,7 +2,7 @@
 
 Author: [Enrico Murru](https://enree.co)
 
-Read details @ https://enreeco-blog-test.blogspot.com/2017/08/salesforce-apex-execute-anonymous-batch.html
+Read details @ http://blog.enree.co/2017/08/salesforce-apex-execute-anonymous-batch.html
 
 The `ID_LIST` *global* variable is of type `List<ID>` and contains all the IDs provided by the Batch's scope.
 
