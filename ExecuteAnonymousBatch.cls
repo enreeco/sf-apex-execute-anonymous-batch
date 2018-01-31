@@ -41,8 +41,8 @@ public class ExecuteAnonymousBatch implements Database.Batchable<SObject>, Datab
     /*
      * Batchable Start method
      */
-    public Iterable<SObject> start(Database.BatchableContext BC){
-        return Database.query(this.soqlQuery);
+    public Database.QueryLocator start(Database.BatchableContext BC){
+        return Database.getQueryLocator(this.soqlQuery);
     }
     
     /*
